@@ -1,5 +1,9 @@
 FROM node:20-alpine
 
+LABEL org.opencontainers.image.source="https://github.com/PolataMai/hello-world" \
+      org.opencontainers.image.description="Hello World service deployed through Devtron" \
+      org.opencontainers.image.licenses="MIT"
+
 WORKDIR /app
 
 COPY --chown=node:node package.json app.js ./
