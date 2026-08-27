@@ -17,6 +17,9 @@ npm start
 
 The service listens on port `8080` by default.
 
+Every push to `main` publishes `ghcr.io/polatamai/hello-world:latest`. Devtron
+uses that public image for the deployment pipeline.
+
 | Endpoint | Purpose | Example response |
 | --- | --- | --- |
 | `GET /` | Application response | `{"message":"Hello World!", ...}` |
